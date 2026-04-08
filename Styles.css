@@ -80,7 +80,7 @@ nav ul a:hover {
   background-color: #020202;
 }
 
-/*------menu------*/
+/*------destination------*/
 .secondsection {
    background-image: url(asset/homebackground.jpg);
   text-align: center;
@@ -94,16 +94,13 @@ nav ul a:hover {
 .secondsection p {
   margin-bottom: 25px;
 }
-
-/*------cards------*/
 .card-grid {
-  display: flex;
+  display: grid;
   gap: 20px;
-  flex-wrap: wrap;
+ grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
-  flex: 1 1 280px;
   border: 1px solid #ddd;
   border-radius: 6px;
   overflow: hidden;
@@ -132,7 +129,7 @@ nav ul a:hover {
 .card:hover {
   background-color: #FFCE79;
   transform: translateY(-10px);
-  transition: opacity 0.6;
+  transition: opacity 0.3;
 }
 
 /*------packages------*/
@@ -230,13 +227,7 @@ nav ul a:hover {
   font-size: 14px;
   color: #555;
 }
-
-
-
-
-
-
-
+/*------members------*/
 .team-section h2,
 .team-section .section-sub {
   text-align: center;
@@ -284,6 +275,10 @@ nav ul a:hover {
   font-weight: bold;
   margin-bottom: 14px;
 }
+
+
+
+
 
 
 
