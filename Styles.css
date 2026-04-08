@@ -47,7 +47,7 @@ nav ul a:hover {
   color: #2a7d4f;
 }
 
-/*------firstsection------*/
+/*------home------*/
 .firstsection {
   background-image: url(asset/bg\ firstpage.png);
   background-color: #2a7d4f;
@@ -80,7 +80,7 @@ nav ul a:hover {
   background-color: #020202;
 }
 
-/*------secondsection------*/
+/*------menu------*/
 .secondsection {
    background-image: url(asset/homebackground.jpg);
   text-align: center;
@@ -135,7 +135,7 @@ nav ul a:hover {
   transition: opacity 0.6;
 }
 
-/*------thirdsection------*/
+/*------packages------*/
 .thirdsection {
   padding: 80px 40px;
   max-width: 100%;
@@ -196,10 +196,10 @@ nav ul a:hover {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-/*------fourthsection------*/
+/*------about------*/
 .fourthsection {
   text-align: center;
-  padding: 20px 10px;
+  padding: 150px 10px;
   background-color: #e6e6e6;
 
 }
@@ -236,9 +236,12 @@ nav ul a:hover {
 
 
 
+
 .team-section h2,
 .team-section .section-sub {
   text-align: center;
+  padding: 20px;
+  margin: 10px;
 }
 
 .team-grid {
@@ -291,7 +294,7 @@ nav ul a:hover {
 
 
 
-
+/*
 footer {
   background-color: #222;
   color: #aaa;
@@ -364,3 +367,4 @@ footer ul a:hover {
     gap: 15px;
   }
 }
+*/
