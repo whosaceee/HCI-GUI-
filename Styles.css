@@ -69,13 +69,22 @@ nav li:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
 
 /*------home------*/
 .firstsection {
   background-image: url(asset/bg\ firstpage.png);
   background-color: #2a7d4f;
   text-align: center;
-  padding: 250px 50px;
+  padding: 254px 50px;
 }
 .firstsection h1 {
   opacity: 100%;
@@ -163,6 +172,7 @@ nav li:hover::after {
   padding: 80px 40px;
   max-width: 100%;
   margin: auto;
+    background-color: #e8e8e8;
 }
 .thirdsection h2 {
   text-align: center;
@@ -230,7 +240,7 @@ nav li:hover::after {
 .fourthsection {
   text-align: center;
   padding: 150px 10px;
-  background-color: #e6e6e6;
+  background-image: url(asset/aboutbackground.png);
 
 }
 .about-grid {
@@ -423,86 +433,32 @@ nav li:hover::after {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+  @media (max-width: 768px) {
 
-
-
-
-
-
-
-
-
-/*
-footer {
-  background-color: #222;
-  color: #aaa;
-  text-align: center;
-  padding: 25px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-footer p {
-  font-size: 13px;
-}
-
-footer ul {
-  display: flex;
-  gap: 20px;
-}
-
-footer ul a {
-  font-size: 13px;
-  color: #aaa;
-}
-
-footer ul a:hover {
-  color: #fff;
-}
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 12px;
-    padding: 15px 20px;
+  .menu-icon {
+    display: block;
   }
 
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
 
-  .firstsection h1 {
-    font-size: 26px;
-  }
-
-  .section {
-    padding: 50px 20px;
-  }
-
-  .bg-light {
-    padding: 50px 20px;
-  }
-
-  .card-grid,
-  .about-grid {
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    /* hidden */
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
   }
 
-  .form-row {
-    flex-direction: column;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .team-grid {
-    gap: 15px;
+  /* show menu */
+  #menu-toggle:checked ~ ul {
+    max-height: 300px;
+    padding: 20px 0;
   }
 }
-*/
