@@ -173,7 +173,7 @@ nav li:hover::after {
   padding: 80px 40px;
   max-width: 100%;
   margin: auto;
-    background-color: #e8e8e8;
+  background-color: #e8e8e8;
 }
 .thirdsection h2 {
   text-align: center;
@@ -455,13 +455,10 @@ nav li:hover::after {
     align-items: center;
     gap: 20px;
 
-    /* hidden */
     max-height: 0;
     overflow: hidden;
     transition: 0.3s ease;
   }
-
-  /* show menu */
   #menu-toggle:checked ~ ul {
     max-height: 300px;
     padding: 20px 0;
