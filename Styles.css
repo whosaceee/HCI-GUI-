@@ -100,16 +100,18 @@ nav li:hover::after {
 /*------button------*/
 .btn {
   display: inline-block;
-  background-color: #f5a623;
   color: #fff;
   padding: 12px 28px;
   border-radius: 5px;
   font-size: 15px;
   cursor: pointer;
   text-decoration: none;
+  font-weight: bold;
+  background: linear-gradient(135deg, #f5a623, #ff8800);
+  transition: 0.3s;
 }
 .btn:hover {
-  background-color: #020202;
+  background: linear-gradient(135deg, #222, #000);
   transform: scale(1.05);
 }
 
@@ -132,38 +134,40 @@ nav li:hover::after {
   gap: 20px;
   grid-template-columns:repeat(5, 1fr);
 }
-
 .card {
-  border: 1px solid #ddd;
-  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 12px;
   overflow: hidden;
   background: #fff;
+  transition: 0.3s ease;
 }
-
 .card img {
-  height: 263px;
+  height: 220px;
   object-fit: cover;
 }
-
 .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: 15px;
 }
-
 .card-body h3 {
-  font-size: 17px;
-  margin-bottom: 6px;
-  color: #222;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-
 .card-body p {
   font-size: 14px;
   color: #555;
 }
+.card-body .btn {
+  margin-top: auto;
+  text-align: center;
+  font-weight: bold;
+}
 .card:hover {
-  background-color: #FFCE79;
   transform: translateY(-10px);
-  transition: opacity 0.6;
- 
   box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 
@@ -203,7 +207,6 @@ nav li:hover::after {
 }
 .package-card:hover{
   transform: translateY(-10px);
-  transition: opacity 0.6;
   box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 .package-card h3 {
@@ -369,6 +372,7 @@ nav li:hover::after {
   background: #256b43;
 }
 
+/*------footer------*/
 
 .footer {
   background: #2a7d4f;

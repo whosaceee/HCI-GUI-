@@ -11,7 +11,6 @@ body {
   line-height: 1.6;
 }
 .hero {
-  background-color: aquamarine;
   background-image: url('../asset/packagesbackgroundd.png');
   background-size: cover;
   background-position: center;
