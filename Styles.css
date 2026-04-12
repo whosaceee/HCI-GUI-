@@ -1,11 +1,8 @@
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-}
-img {
-  width: 100%;
-  display: block;
 }
 body {
   color:#333;
@@ -13,10 +10,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/*---------nav------*/
-ul {
-  list-style: none;
-}
+/*-----------------------------------------------------nav------*/
 nav {
   display: flex;
   justify-content: space-between;
@@ -79,7 +73,7 @@ nav li:hover::after {
 }
 
 
-/*------home------*/
+/*----------------------------------------------------------home------*/
 .firstsection {
   background-image: url(asset/bg\ firstpage.png);
   background-color: #2a7d4f;
@@ -87,7 +81,6 @@ nav li:hover::after {
   padding: 254px 50px;
 }
 .firstsection h1 {
-  opacity: 100%;
   font-size: 38px;
   margin-bottom: 15px;
   color: white;
@@ -115,9 +108,9 @@ nav li:hover::after {
   transform: scale(1.05);
 }
 
-/*------destination------*/
+/*----------------------------------------------------------destination------*/
 .secondsection {
-   background-image: url(asset/homebackground.jpg);
+  background-image: url(asset/homebackground.jpg);
   text-align: center;
   padding: 100px 20px;
 }
@@ -172,7 +165,7 @@ nav li:hover::after {
 }
 
 
-/*------packages------*/
+/*----------------------------------------------------------packages------*/
 .thirdsection {
   padding: 80px 40px;
   max-width: 100%;
@@ -184,7 +177,7 @@ nav li:hover::after {
   padding: 10px;
   margin-bottom: 5px;
 }
-.section-sub {
+.p {
   padding: 20px;
   margin-bottom: 10px;
   text-align: center;
@@ -201,9 +194,10 @@ nav li:hover::after {
 .package-card {
   flex: 1 1 280px;
   border: 1px solid #ddd;
-  border-radius: 6px;
+  border-radius: 12px;
   background-color: #fff;
   padding: 25px;
+  transition: 0.3s ease;
 }
 .package-card:hover{
   transform: translateY(-10px);
@@ -240,14 +234,14 @@ nav li:hover::after {
   border-radius: 20px;
   margin-bottom: 10px;
 }
-/*------about------*/
+/*----------------------------------------------------------about------*/
 .fourthsection {
   text-align: center;
   padding: 150px 10px;
   background-image: url(asset/aboutbackground.png);
 
 }
-.about-grid {
+.about {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
@@ -260,10 +254,10 @@ nav li:hover::after {
   border: 1px solid #ddd;
   border-radius: 6px;
   background: #fff;
+  transition: 0.3s ease;
 }
 .item:hover {
   transform: translateY(-10px);
-  transition: opacity 0.6;
   box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 .icon {
@@ -279,7 +273,7 @@ nav li:hover::after {
   font-size: 14px;
   color: #555;
 }
-/*------members------*/
+/*----------------------------------------------------------members------*/
 .team-section h2,
 .team-section .section-sub {
   text-align: center;
@@ -304,10 +298,14 @@ nav li:hover::after {
   background: #fff;
   color: #333;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .team-card:hover {
   border-color: #2a7d4f;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+
 }
 
 .team-card img {
@@ -328,7 +326,7 @@ nav li:hover::after {
   margin-bottom: 14px;
 }
 
-/*------contact------*/
+/*----------------------------------------------------------contact------*/
 .contact-section {
   padding: 60px 20px;
   text-align: center;
@@ -372,7 +370,7 @@ nav li:hover::after {
   background: #256b43;
 }
 
-/*------footer------*/
+/*----------------------------------------------------------footer------*/
 
 .footer {
   background: #2a7d4f;
