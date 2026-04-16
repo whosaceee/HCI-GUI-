@@ -17,12 +17,44 @@
             <li><a href="#packages">Packages</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Contacts">Contacts</a></li>
+            <li><a href="#signin-modal" class="btnsignin">Sign In</a></li>
         </ul>
     </nav>
+
+    <div id="signin-modal" class="modal-overlay">
+      <div class="signin-box">
+        <a href="#" class="close-btn">×</a>
+        <p class="signin-logo">✈︎ WanderEase</p>
+        <p class="signin-sub">Sign in to your account</p>
+        <label>Email</label>
+        <input type="email" placeholder="you@email.com">
+        <label>Password</label>
+        <input type="password" placeholder="Password" minlength="6" maxlength="12" required>
+        <button class="signin-submit">Sign In</button>
+        <p class="signin-footer">Don't have an account? <a href="#signup-modal">Sign Up</a></p>
+      </div>
+    </div>
+    <div id="signup-modal" class="modal-overlay">
+      <div class="signin-box">
+        <a href="#" class="close-btn">×</a>
+        <p class="signin-logo">✈︎ WanderEase</p>
+        <p class="signin-sub">Create your account</p>
+        <label>Full Name</label>
+        <input type="text" placeholder="Juan dela Cruz">
+        <label>Email</label>
+        <input type="email" placeholder="you@email.com">
+        <label>Password</label>
+        <input type="password" placeholder="••••••••" minlength="6" maxlength="12" required>
+        <label>Confirm Password</label>
+        <input type="password" placeholder="••••••••" minlength="6" maxlength="12" required>
+        <button class="signin-submit">Sign Up</button>
+        <p class="signin-footer">Already have an account? <a href="#signin-modal">Sign In</a></p>
+      </div>
+    </div>
     <section id="HOME" class="firstsection">
         <h1>Travel the World with WanderEase</h1>
         <p>Your trusted partner for affordable, safe and unforgettable travel experience.</p>
-        <a href="#packages" class="btn">Book Now</a>
+        <a href="#Destination" class="btn">Book Now</a>
     </section>
 
     <section id="Destination" class="secondsection">
@@ -35,7 +67,7 @@
         <div class="card-body">
           <h3>Bali, Indonesia</h3>
           <p>Known for its beautiful temples, rice terraces, and warm hospitality.</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/indo.html" class="btn">Learn More</a>
         </div>
       </div>
 
@@ -44,7 +76,7 @@
         <div class="card-body">
           <h3>Bangkok, Thailand</h3>
           <p>Known for its vibrant street life, temples, and rich culture and traditions history.</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="Country/thailand.html" class="btn">Learn More</a>
         </div>
       </div>
 
@@ -53,7 +85,7 @@
         <div class="card-body">
           <h3>Singapore</h3>
           <p>known for its rooftop infinity pool and unique three-tower design.</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="Country/singapore.html" class="btn">Learn More</a>
         </div>
       </div>
       <div class="card">
@@ -61,7 +93,7 @@
         <div class="card-body">
           <h3>Cambodia</h3>
           <p>known for its grand architecture and historical significance.</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/cambodia.html" class="btn">Learn More</a>
         </div>
       </div>
       <div class="card">
@@ -69,7 +101,7 @@
         <div class="card-body">
           <h3>Ipoh, Malaysia</h3>
           <p>A charming city in Malaysia, known for its colonial architecture.</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/malaysia.html" class="btn">Learn More</a>
         </div>
       </div>
       <div class="card">
@@ -77,7 +109,7 @@
         <div class="card-body">
           <h3> Yangon, Myanmar</h3>
           <p>known for its colonial architecture and the golden Shwedagon Pagoda.</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/myanmar.html" class="btn">Learn More</a>
         </div>
       </div>
       <div class="card">
@@ -85,7 +117,7 @@
         <div class="card-body">
           <h3> Brunei</h3>
           <p>known for its oil riches, Islamic culture, and grand mosques</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/brunie.html" class="btn">Learn More</a>
         </div>
       </div>
       <div class="card">
@@ -93,7 +125,7 @@
         <div class="card-body">
           <h3>Vietnam</h3>
           <p>known for its unique design and stunning mountain views.</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/vietnam.html" class="btn">Learn More</a>
         </div>
       </div>
       <div class="card">
@@ -101,7 +133,7 @@
         <div class="card-body">
           <h3>Laos</h3>
           <p>A landlocked country known for its mountains, rivers, and peaceful culture</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/laos.html" class="btn">Learn More</a>
         </div>
       </div>
       <div class="card">
@@ -109,7 +141,7 @@
         <div class="card-body">
           <h3>Timor Leste</h3>
           <p>A landlocked country known for its mountains, rivers, and peaceful culture</p>
-          <a href="#packages" class="btn">Learn More</a>
+          <a href="/Country/timor leste.html" class="btn">Learn More</a>
         </div>
       </div>
 
@@ -121,8 +153,7 @@
     <div class="package-grid">
 
       <div class="package-card">
-        <h3>Basic</h3>
-        <p class="price">₱45,000 <span>/ person</span></p>
+        <h3>Basic</h3> 
         <p class="duration">5 Days · 4 Nights</p>
         <ul>
           <li>Round-trip Airfare</li>
@@ -131,13 +162,12 @@
           <li>2 Guided Tours</li>
           <li>Airport Transfers</li>
         </ul>
-        <a href="Packages/BasicPackage.html" class="btn">Book Now</a>
+        <a href="#Destination" class="btn">Book Now</a>
       </div>
 
       <div class="package-card">
         <span class="badge">Most Popular</span>
         <h3>Standard</h3>
-        <p class="price">₱90,000 <span>/ person</span></p>
         <p class="duration">8 Days · 7 Nights</p>
         <ul>
           <li>Round-trip Airfare</li>
@@ -148,12 +178,11 @@
           <li>Travel Insurance</li>
           <li>24/7 Support</li>
         </ul>
-        <a href="Packages/StandardPackage.html" class="btn btn-white">Book Now</a>
+        <a href="#Destination" class="btn btn-white">Book Now</a>
       </div>
 
       <div class="package-card">
         <h3>Elite</h3>
-        <p class="price">₱150,000 <span>/ person</span></p>
         <p class="duration">14 Days · 13 Nights</p>
         <ul>
           <li>Business Class Airfare</li>
@@ -164,7 +193,7 @@
           <li>Full Insurance</li>
           <li>Personal Guide</li>
         </ul>
-        <a href="Packages/ElitePackage.html" class="btn">Book Now</a>
+        <a href="#Destination" class="btn">Book Now</a>
       </div>
 
     </div>
@@ -225,7 +254,7 @@
         <p>StoryBoard</p>
       </a>
 
-      <a href="#" class="team-card">
+      <a href="/kurtportfolio/kurt.html" class="team-card">
         <img src="asset/kurt.png" alt="Kurt Jersey" />
         <h3>Paras, Kurt Jersey V.</h3>
         <p>StoryBoard</p>

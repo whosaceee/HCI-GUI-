@@ -15,7 +15,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 16px 40px;
   border-bottom: 1px solid #ddd;
   position: sticky;
   top: 0;
@@ -23,7 +23,8 @@ nav {
   background: #fff;
 }
 .logo {
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 700;
   font-weight: bold;
   color: #2a7d4f;
 }
@@ -71,8 +72,6 @@ nav li:hover::after {
   font-size: 25px;
   cursor: pointer;
 }
-
-
 /*----------------------------------------------------------home------*/
 .firstsection {
   background-image: url(asset/bg\ firstpage.png);
@@ -90,7 +89,7 @@ nav li:hover::after {
   margin-bottom: 30px;
   color: white;
 }
-/*------button------*/
+/*-------button------*/
 .btn {
   display: inline-block;
   color: #fff;
@@ -104,6 +103,19 @@ nav li:hover::after {
   transition: 0.3s;
 }
 .btn:hover {
+  background: linear-gradient(135deg, #222, #000);
+  transform: scale(1.05);
+}
+.btnsignin {
+  background-color: #f5a623;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  
+}
+.btnsignin:hover {
   background: linear-gradient(135deg, #222, #000);
   transform: scale(1.05);
 }
@@ -204,10 +216,6 @@ nav li:hover::after {
   box-shadow: 0 15px 35px rgba(0,0,0,0.3);
 }
 .package-card h3 {
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-.package-card .price {
   font-size: 26px;
   font-weight: bold;
   color: #2a7d4f;
@@ -422,7 +430,97 @@ nav li:hover::after {
   padding-top: 15px;
   font-size: 14px;
 }
-
+/*------------------------------------------------------------signin-----------------------*/
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay:target {
+  display: flex;
+}
+.signin-box {
+  background: url(asset/Gemini_Generated_Image_gaijz6gaijz6gaij.png);
+  background-size: cover;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: #888;
+  text-decoration: none;
+  line-height: 1;
+}
+.close-btn:hover {
+  color: #333;
+}
+.signin-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2a7d4f;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.signin-sub {
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.signin-box label {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  margin-bottom: 4px;
+}
+.signin-box input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+.signin-submit {
+  width: 100%;
+  padding: 11px;
+  background: linear-gradient(135deg, #f5a623, #ff8800);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.signin-submit:hover {
+  background: linear-gradient(135deg, #222, #000);
+}
+.signin-footer {
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+  margin-top: 1rem;
+}
+.signin-footer a {
+  color: #2a7d4f;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 @media (max-width: 768px) {
   .footer-container {
@@ -466,3 +564,5 @@ nav li:hover::after {
     padding: 20px 0;
   }
 }
+
+

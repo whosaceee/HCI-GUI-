@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,7 +15,7 @@ body {
   border-bottom: 2px;
 }
 
-
+/*backbutton*/
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -35,7 +33,7 @@ body {
   border-color: #000000;
 }
 
-
+/*Packagename*/
 .hero-right {
   max-width: 1100px;
   margin: 0 auto;
@@ -108,7 +106,6 @@ body {
   flex: 1;
   padding-right: 48px;
 }
-
 .content h2 {
   font-size: 20px;
   font-weight: bold;
@@ -117,8 +114,6 @@ body {
   margin-top: 32px;
   margin-bottom: 8px;
 }
-
-
 .content hr {
   border: none;
   border-top: 1.5px solid #000000;
@@ -129,7 +124,6 @@ body {
   margin-bottom: 10px;
   font-size: 15px;
 }
-
 .content strong {
   color: #000000;
   font-weight: bold;
@@ -145,9 +139,7 @@ body {
   gap: 20px;
   position: sticky;
   top: 24px;
-
 }
-
 .card {
   border: 1.5px solid #000000;
   border-radius: 4px;
@@ -163,19 +155,16 @@ body {
   text-transform: uppercase;
   padding: 10px 16px;
 }
-
 .card-body {
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
 .label {
   font-weight: bold;
   color: #000000;
 }
-
 .btn-book {
   width: 100%;
   padding: 11px;
@@ -187,10 +176,11 @@ body {
   margin-top: 6px;
   border-radius: 5px;
 }
-
 .btn-book:hover {
   background-color: #11ff00;
 }
+
+
 
 @media (max-width: 768px) {
   .hero-right {
